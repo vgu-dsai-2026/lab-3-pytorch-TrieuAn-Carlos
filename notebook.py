@@ -177,3 +177,4 @@ def run_training_experiment(model: nn.Module, train_loader: DataLoader, val_load
         history.append({'epoch': epoch, 'train_loss': train_loss, 'train_acc': train_acc, 'val_loss': val_loss, 'val_acc': val_acc})
     test_loss, test_acc = evaluate(model, test_loader, criterion, device)
     return (history, test_loss, test_acc)
+
